@@ -625,6 +625,8 @@
     <Compile Include="Models\Common\AsposeConversion.cs" />
     <Compile Include="Models\Common\InputFileCollection.cs" />
     <Compile Include="Models\diagram\AsposeDiagramConversion.cs" />
+    <Compile Include="Models\diagram\AsposeDiagramMerger.cs" />
+    <Compile Include="Models\email\AsposeEmailMerger.cs" />
     <Compile Include="Models\email\AsposeEmailConversion.cs" />
     <Compile Include="Models\email\AsposeEmailConversion_EML_MSG.cs" />
     <Compile Include="Models\email\AsposeEmailConversion_MBOX.cs" />

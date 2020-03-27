@@ -28,7 +28,7 @@ namespace Aspose.App.Live.Demos.UI.Models.pdf
 
 			foreach (InputFile inputFile in inputFiles)
 			{
-				documents.Add(new Document(Config.Configuration.WorkingDirectory + inputFile.FolderName + "//" + inputFile.FileName));
+				documents.Add(new Document( Path.Combine( Config.Configuration.WorkingDirectory , inputFile.FolderName , inputFile.FileName)));
 
 			}
 			var docs = documents;

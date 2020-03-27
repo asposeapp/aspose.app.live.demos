@@ -13,22 +13,22 @@ using Aspose.App.Live.Demos.UI.Models.Common;
 namespace Aspose.App.Live.Demos.UI.Models.pdf
 {
 	///<Summary>
-	/// AsposeCellsMerger class to merge pdf file
+	/// AsposeCellsMerger class to merge cells file
 	///</Summary>
 	public class AsposeCellsMerger : AsposeCellsBase
 	{
 		///<Summary>
-		/// Merge method to merge pdf document
+		/// Merge method to merge cells files
 		///</Summary>
-		
-		
+
+
 		public Response Merge(string outputType, InputFiles inputFiles)
 		{
 			List<Workbook> documents = new List<Workbook>();
 
 			foreach (InputFile inputFile in inputFiles)
 			{
-				documents.Add(new Workbook(Config.Configuration.WorkingDirectory + inputFile.FolderName + "//" + inputFile.FileName));
+				documents.Add(new Workbook( Path.Combine( Config.Configuration.WorkingDirectory , inputFile.FolderName , inputFile.FileName)));
 
 			}
 			var docs = documents;
